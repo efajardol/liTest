@@ -138,4 +138,4 @@ REST_FRAMEWORK = {
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())

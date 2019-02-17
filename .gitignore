@@ -4,3 +4,8 @@
 manage.py
 uploads
 migrations
+venv
+*.pyc
+staticfiles
+.env
+db.sqlite3
