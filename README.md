@@ -23,12 +23,12 @@ la siguiente lista detalla la funcionalidad de la aplicación que responde a una
 |**Endpoint**  |**HTTP method**|**Resultado** |
 |--------------|---------------|--------------|
 |drivers       |GET            |listar conductores|
-|drivers/name/ |GET            |buscar condutor por nombre|
-|drivers/id/   |GET            |buscar condutor por cédula|
-|drivers/plate/|GET            |buscar condutor por placa de su vehículo|
 |drivers       |POST           |crear conductor|
+|drivers/name  |GET            |buscar condutor por nombre|
 |drivers/name  |PUT            |actualizar conductor|
 |drivers/name  |DEL            |borrar conductor|
+|drivers/id/   |GET            |buscar condutor por cédula|
+|drivers/plate/|GET            |buscar condutor por placa de su vehículo|
 |vehicles      |GET            |listar vehículos registrados|
 |vehicles/cvs  |GET            |listar vehículos registrados mediante CVS|
 |vehicles/count|GET            |listar número de vehículos registrados|

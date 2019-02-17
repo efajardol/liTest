@@ -19,3 +19,15 @@ class DriverSerializer(serializers.ModelSerializer):
         return Driver.objects.create(vehicle=vehicle,**validated_data)
 
         
+class histSerializer(serializers.BaseSerializer):
+    brand=serializers.ChoiceField(Vehicle.BRANDS)
+    count=serializers.IntegerField()
+    
+    def to_representation(self, obj):
+        return obj
+
+class countSerializer(serializers.BaseSerializer):
+    count=serializers.IntegerField()
+    
+    def to_representation(self, obj):
+        return obj

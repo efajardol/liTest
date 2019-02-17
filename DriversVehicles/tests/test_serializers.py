@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.core.files import File
 from DriversVehicles.models import Driver, Vehicle
-from DriversVehicles.serializers import DriverSerializer, VehicleSerializer
+from DriversVehicles.serializers import DriverSerializer, VehicleSerializer, histSerializer
 from collections import OrderedDict
 
 class DVSerializerTest(TestCase):
@@ -43,3 +43,5 @@ class DVSerializerTest(TestCase):
         data.pop('id')
         data.pop('id_image')
         self.assertEqual(data,self.driver)
+
+        
