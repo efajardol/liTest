@@ -1,1 +1,1 @@
-web: gnunicorn DriversVehicles.wsgi --log-file -
+web: gunicorn liftit.wsgi --log-file -
